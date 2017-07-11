@@ -1,0 +1,25 @@
+{
+  "name": "gooddata-node",
+  "version": "1.0.0",
+  "description": "A simple GraphQL server for GoodData using the JS SDK",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node -e js "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-register": "^6.24.1",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.2",
+    "gooddata": "^1.7.1",
+    "graphql": "^0.10.3",
+    "graphql-server-express": "^0.9.0",
+    "graphql-tools": "^1.1.0"
+  }
+}
