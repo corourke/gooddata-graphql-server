@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon ./index.js --exec babel-node -e js "
   },
-  "presets": ["env"],
+  "presets": [
+    "env"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +23,7 @@
     "gooddata": "^1.7.1",
     "graphql": "^0.10.3",
     "graphql-server-express": "^0.9.0",
-    "graphql-tools": "^1.1.0"
+    "graphql-tools": "^1.1.0",
+    "yargs": "^10.0.3"
   }
 }

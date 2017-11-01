@@ -1,10 +1,16 @@
 // GraphQL Resolvers
 
 const gooddata = require("gooddata")
+const argv = require('yargs')
+    .usage('Usage: $0 -p [num]')
+	.demandOption(['p'])
+	.argv;
+
+
 gooddata.config.setCustomDomain("insurance-demo.na.gooddata.com")
 const projectId = "k5zklu0ijpzvmmqdst8akqkvczko7unb", // Digital Insurance
       user = "demos+insurance@gooddata.com",
-      passwd = "good660"
+      passwd = argv.p
 
 
 function login() {
